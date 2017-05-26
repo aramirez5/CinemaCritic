@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>Bienvenido a CinemaCritic</title>
+	
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css">
+	
+	<script type="text/javascript" src="js/cordova-2.7.0.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/ip.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+
+	<script>
+	        function onBodyLoad() {		
+	            document.addEventListener("deviceready",onDeviceReady,false);
+	        }
+	</script> 
+
+</head>
+
+<!-- Formulario de login -->
+
+<body>
+	<div data-role="page" data-theme="c" id="page1">
+		<div id="header" data-theme="b" data-role="header">
+			<h3>Login</h3>
+		</div>
+		 <div id="marco"> 
+		 <div id="landmark-1" data-landmark-id="1"> 
+			<form action="" name="mylogin">
+		<br></br> 
+		<div data-role="content">
+	
+		<center><img src="img/logo.png" width="87" height="106"></center>
+			<div class="nick" data-role="fieldcontain">
+				<input name="nick" id="nick" placeholder="Nombre de usuario" value="" type="text">
+			</div>
+			<div class="pass" data-role="fieldcontain">
+				<input name="pass" id="pass" placeholder="Contrase&ntilde;a" value="" type="password">
+			</div>
+			 <input value="Entrar" data-theme="b" type="submit">
+			 <a onclick= "redirigir();" data-theme="b" data-role="button" style="background:#c1272d">Reg&iacute;strate</a>
+		</div>
+		</form>
+		</div> 
+		</div>
+	</div>
+</body>
+</html>

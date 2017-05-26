@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<title>CinemaCritic</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="css/estilos.css" />
+	
+</head> 
+    
+<body onload="recuperarURL();">
+        
+<div id="paginaListaComentarios" data-role="page" >
+
+	<div id="header" data-theme="b" data-role="header">
+		<a onclick="redirigirComentariosOpciones();" data-role="button" data-icon="back">Atr&aacute;s</a>
+		<h3>CinemaCritic</h3>
+		<a onclick="redirigirComentariosMenu();" data-role="button" data-icon="home">Men&uacute;</a>
+	</div>
+	
+	<div id="header2">
+		<h2>Lista de cr&iacute;ticas</h2>
+	</div>
+
+	<div id="marco">
+         <ul id="listaComentarios" data-role="listview"></ul>
+    </div>		
+ 
+</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/url.js"></script>
+	<script type="text/javascript" src="js/ip.js"></script>
+	<script src="js/comentarios.js"></script>
+	<script src="js/detallesCritica.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <title>CinemaCritic</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+        
+        <link rel="stylesheet" href="css/estilos.css" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css"/>
+        
+        <script type="text/javascript" src="js/cordova-2.7.0.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/iscroll.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+		<script type="text/javascript" src="js/url.js"></script>
+		<script type="text/javascript" src="js/ip.js"></script>
+		<script type="text/javascript" src="js/deseadas.js"></script>
+	     
+</head>
+
+<!-- Formulario -->
+
+<body onload="recuperarURL();">
+	<div data-role="page" data-theme="c" id="page1">    
+	<div class="header" id="header" data-theme="b" data-role="header" data-position="fixed" data-tap-toggle="false" data-update-page-padding="false">
+			<a onclick="redirigirDesearOpciones();" data-role="button" data-icon="back">Atr&aacute;s</a>
+			<h3 style="color:#FFFFFF">CinemaCritic</h3>
+			<a onclick="redirigirDesearMenu();" data-role="button" data-icon="home">Men&uacute;</a>
+		</div>
+	
+	<div id="header2">
+		<h2>Opciones para lista de deseadas</h2>
+	</div>  
+	<br></br>
+ 
+<div id="marco"> 
+<div id="landmark-1" data-landmark-id="1">   	
+	<form action="" name="myForm"> 
+		<div data-role="content">
+			<fieldset data-role="controlgroup">
+         	<input type="radio" name="desear" id="radio-choice-1" value="1" checked="checked" />
+         	<label for="radio-choice-1"><img src="img/add.gif">Añadir a deseadas</label>
+
+         	<input type="radio" name="desear" id="radio-choice-2" value="2"  />
+         	<label for="radio-choice-2" value="2"><img src="img/delete.gif">Eliminar de deseadas</label>
+    </fieldset>
+			
+			<input value="Confirmar" data-theme="b" type="submit">
+		</div> 
+		</form>
+		</div>
+</div>
+	</div>
+</body>
+</html>
